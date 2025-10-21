@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Simple';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Danjo-bold-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GabiaDun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2510-1@1.0/GabiaDunn-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+body{
+   margin: 0;
+  padding: 0;
+}
+.container{
+ display: flex;
+ justify-content: center;
+  border: 1px solid #000;
+  align-items: center;
+  height: 100vh;
+}
+.tittle{
+  font-family: 'Simple';
+  text-align: center;
+  font-size: 60px;
+  color: rgb(36, 195, 15)
+}
+.box-tittle{
+  text-align: center;
+  font-family: 'GabiaDun';
+}
+h2{
+  text-align: center;
+}
+
+.box{
+  border: 2px double #101010;
+  width: 500px;
+  height: 500px;
+  border-radius:30px;
+  margin: 10px;
+   animation: flicker .5s infinite alternate;
+}
+/* @keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 
+      0 0 5px #e41db2,
+      0 0 10px #6ce218,
+      0 0 20px #ee8223,
+      0 0 40px #eedf0cef,
+      0 0 80px #fbfbfb;
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 
+      0 0 3px #00e5ff,
+      0 0 8px #00e5ff,
+      0 0 15px #00e5ff,
+      0 0 30px #00e5ff,
+      0 0 60px #00e5ff;
+  }
+} */
+.item-img{
+  width: 300px;  
+  height: 300px;
+  display: flex;
+  justify-self: center;
+  
+}
+.main{
+  display: flex;
+  justify-content: center;
+}
+.main button{
+  cursor: pointer;
+  width: 70px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50px;
+  border:none;
+  background-color: rgb(225, 222, 222);
+}
+.main button:nth-child(1){
+  background-color: rgb(91, 239, 222);
+}
+.main button:nth-child(2){
+  background-color: rgb(238, 130, 164);
+}
+.main button:nth-child(3){
+  background-color: rgb(244, 213, 88);
+}
+
+
+/* 
+.item:hover .front img {
+  animation: ani 1s linear infinite;
+}
+.tittle:hover{
+ transform: rotateY(360deg);
+}
+@keyframes ani {
+  0%,100% {
+    transform: scale(0.9)
+  }
+  50% {
+    transform: scale(1.1)
+  }
+} */
