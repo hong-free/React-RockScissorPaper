@@ -39,7 +39,7 @@ h2{
   text-align: center;
 }
 .box{
-  border: 10px solid black;  color: black;
+  border: 10px solid rgb(5, 91, 12);  
   box-sizing: border-box;
   width: 500px;
   height: 500px;
