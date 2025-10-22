@@ -27,53 +27,59 @@ body{
   color: rgb(36, 195, 15)
 }
 .box-tittle{
+  color:#000;
   text-align: center;
   font-family: 'GabiaDun';
 }
 h2{
+  color:#faa609;
+  font-family: 'Simple';
   text-align: center;
 }
-
 .box{
-  border: 2px double #101010;
+  border: 10px solid black;  color: black;
+  box-sizing: border-box;
   width: 500px;
   height: 500px;
   border-radius:30px;
   margin: 10px;
-   animation: flicker .5s infinite alternate;
 }
-/* @keyframes flicker {
+.vs{
+  font-size: 100px;
+  padding: 60px;
+  font-family: 'GabiaDun';
+}
+@keyframes flicker {
   0%, 100% {
     opacity: 1;
     box-shadow: 
-      0 0 5px #e41db2,
-      0 0 10px #6ce218,
-      0 0 20px #ee8223,
-      0 0 40px #eedf0cef,
+      0 0 5px #84e7f3,
+      0 0 10px #08d3e5,
       0 0 80px #fbfbfb;
   }
   50% {
     opacity: 0.8;
     box-shadow: 
-      0 0 3px #00e5ff,
-      0 0 8px #00e5ff,
-      0 0 15px #00e5ff,
+      0 0 3px #e01515,
       0 0 30px #00e5ff,
       0 0 60px #00e5ff;
   }
-} */
+}
 .item-img{
-  width: 300px;  
-  height: 300px;
+  width: 250px;  
+  height: 250px;
   display: flex;
   justify-self: center;
-  
 }
 .main{
   display: flex;
   justify-content: center;
 }
-.main button{
+.play-button{
+   display: flex;
+  justify-content: center;
+}
+.play-button button{
   cursor: pointer;
   width: 70px;
   padding: 10px;
@@ -82,22 +88,29 @@ h2{
   border:none;
   background-color: rgb(225, 222, 222);
 }
-.main button:nth-child(1){
+.play-button button:nth-child(1){
   background-color: rgb(91, 239, 222);
 }
-.main button:nth-child(2){
+.play-button button:nth-child(2){
   background-color: rgb(238, 130, 164);
 }
-.main button:nth-child(3){
+.play-button button:nth-child(3){
   background-color: rgb(244, 213, 88);
 }
+.result{
+  margin : 15px auto;
+  width: 100px;
+  padding: 10px;
+  border: 1px solid #fdfdfd;
+  color:#ffffff;
+  border-radius: 20px;
+  background-color: rgb(255, 43, 43);
+}
 
-
-/* 
 .item:hover .front img {
   animation: ani 1s linear infinite;
 }
-.tittle:hover{
+.title:hover{
  transform: rotateY(360deg);
 }
 @keyframes ani {
@@ -107,4 +120,57 @@ h2{
   50% {
     transform: scale(1.1)
   }
-} */
+}
+.win {  border: 10px solid rgb(23, 163, 228);  color: red;   animation: flicker .5s infinite alternate;  }
+.lose { border: 10px solid red;  color: red;  }
+.tie {  border: 10px solid black;  color: black; }
+
+
+@media(max-width:768px){
+  .container{
+  height: auto;
+}
+  .main{
+    flex-direction: column;
+    align-items: center;
+  }
+
+.tittle{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.box-tittle{
+ font-size: 20px;
+}
+h2{
+  color:#faa609;
+  font-size: 18px;
+}
+ .box{
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+}
+ .vs{
+  font-size: 50px;
+  padding: 10px;
+  font-family: 'GabiaDun';
+} 
+.item-img{
+  width: 120px;  
+  height: 120px;
+}
+.result{
+   width: 40px;
+  padding: 7px;
+  font-size: 14px;
+}
+.main button{
+  display: flex;
+  justify-content: center;
+}
+.vs{
+  font-size: 30px;
+}
+}
+
