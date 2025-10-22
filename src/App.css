@@ -125,6 +125,24 @@ h2{
 .lose { border: 10px solid red;  color: red;  }
 .tie {  border: 10px solid black;  color: black; }
 
+.result.win{
+   border: 0;
+  background-color: rgb(14, 109, 211);
+  color:#fff;
+  animation: flicker;
+}
+.result.lose{
+   border: 0;
+  background-color: rgb(218, 40, 40);
+  color:#fff;
+  animation: flicker;
+}
+.result.tie{
+   border: 0;
+  background-color: rgb(83, 83, 82);
+  color:#fff;
+  animation: flicker;
+}
 
 @media(max-width:768px){
   .container{

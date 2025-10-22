@@ -25,7 +25,7 @@ const Box = (props) => {
         <h1 className='box-tittle'>{props.title}</h1>
         <h2>{props.item && props.item.name}</h2>
         <img className="item-img" src={props.item ? props.item.img : initialImage} />
-        <h2 className='result'>{result? result:"ready"}</h2>
+        <h2 className={`result ${result}`}>{result? result:"ready"}</h2>
       </div>
     </div>
   )
